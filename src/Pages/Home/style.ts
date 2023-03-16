@@ -41,21 +41,24 @@ export const TitleContainer = styled.div`
 export const ItemsContainer = styled.div`
   display: flex;
   gap: 2.5rem;
-  flex-wrap: wrap;
 
   div {
     display: flex;
     flex-direction: column;
-  }
 
-  div span {
-    display: flex;
-    gap: 0.75rem;
+    gap: 1.25rem;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.3;
+    p {
+      display: flex;
+      align-items: center;
+
+      gap: 0.75rem;
+
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
   }
 `
 

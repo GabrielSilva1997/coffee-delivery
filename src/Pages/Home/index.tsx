@@ -7,7 +7,10 @@ import {
 } from './style'
 
 import introImage from '../../assets/intro-image.svg'
-import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+import Cart from '../../assets/icons/IconCart.svg'
+import Timer from '../../assets/icons/IconTimer.svg'
+import Package from '../../assets/icons/IconPackage.svg'
+import Coffee from '../../assets/icons/IconCoffee.svg'
 
 export function Home() {
   return (
@@ -21,23 +24,30 @@ export function Home() {
           </h2>
           <ItemsContainer>
             <div>
-              <span>
-                <ShoppingCart size={24} /> 
+              <p>
+                <img src={Cart} alt="" />
                 Compra simples e segura
-              </span>
-              <span>
-                <Timer size={24} />
+              </p>
+              <p>
+                <span>
+                  <img src={Timer} alt="" />
+                </span>
                 Entrega rápida e rastreada
-              </span>
+              </p>
             </div>
             <div>
-              <span>
-                <Package size={24} />
+              <p>
+                <span>
+                  <img src={Package} alt="" />
+                </span>
                 Embalagem mantém o café intacto
-              </span>
-              <span>
-                <Coffee size={24} />O café chega fresquinho até você
-              </span>
+              </p>
+              <p>
+                <span>
+                  <img src={Coffee} alt="" />
+                </span>
+                O café chega fresquinho até você
+              </p>
             </div>
           </ItemsContainer>
         </TitleContainer>
