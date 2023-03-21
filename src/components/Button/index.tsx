@@ -9,7 +9,7 @@ export const Button = ({ content, icon }: Props) => {
   return (
     <ButtonContainer>
       {icon}
-      <p>{content}</p>
+      <span>{content}</span> {/*Criar um styled component para por no lugar de span*/}
     </ButtonContainer>
   )
 }

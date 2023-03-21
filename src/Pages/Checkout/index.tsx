@@ -1,10 +1,6 @@
-import {
-  Bank,
-  CreditCard,
-  CurrencyDollar,
-  MapPinLine,
-  Money,
-} from 'phosphor-react'
+import { Bank, CreditCard, Money } from 'phosphor-react'
+import yellowMapPoint from '../../assets/icons/IconYellowMapPoint.svg'
+import purpleDollar from '../../assets/icons/IconPurpleDollar.svg'
 import { Button } from '../../components/Button'
 import { CoffeeSelected } from '../../components/CoffeeSelected'
 import {
@@ -23,7 +19,7 @@ export function Checkout() {
         <p>Complete seu pedido</p>
         <AdressForm>
           <header>
-            <MapPinLine size={22} />
+            <img src={yellowMapPoint} alt="" />
             <div>
               <h1>Endereço de Entrega</h1>
               <h2>Informe o endereço onde deseja receber seu pedido</h2>
@@ -42,7 +38,7 @@ export function Checkout() {
 
         <PaymentForm>
           <header>
-            <CurrencyDollar size={22} />
+            <img src={purpleDollar} alt="" />
             <div>
               <h1>Pagamento</h1>
               <h2>
@@ -51,14 +47,14 @@ export function Checkout() {
             </div>
           </header>
 
-          <div>
+          <nav>
             <Button
               content="CARTÃO DE CRÉDITO"
               icon={<CreditCard size={16} />}
             />
             <Button content="CARTÃO DE DÉBITO" icon={<Bank size={16} />} />
             <Button content="DINHEIRO" icon={<Money size={16} />} />
-          </div>
+          </nav>
         </PaymentForm>
       </InfoUser>
 
